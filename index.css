@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+#scene {
+    width: 100vw;
+    height: 56.35vw;
+    position: relative;
+
+}
+
+#baggrund {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(baggrund.svg);
+    background-size: 100% 100%;
+}
+
+#goodgirl {
+    width: 40%;
+    height: 40%;
+
+    background-image: url(good%20girl.svg);
+    background-size: 100% 100%;
+
+
+    position: absolute;
+    z-index: 99;
+    top: 22vw;
+    left: -25vw;
+
+    animation-name:goodgirl;
+    animation-duration: 2.5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform-origin:12%;
+
+
+}
+
+@keyframes goodgirl {
+
+    from {
+
+        right: 100%;
+}
+
+    to{
+        left: 10%;
+
+    }
+}
+
+
+#badgirl {
+    position: absolute;
+
+
+    width: 49%;
+    height: 49%;
+
+    background-image: url(the%20bad%20girl.svg);
+    background-size: 100% 100%;
+
+    top: 21vw;
+    left: 20vw;
+
+    z-index: 98;
+
+    animation-name:badgirl;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear
+}
+
+@keyframes badgirl {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+
+#teacher{
+
+    position: absolute;
+
+
+    width: 55%;
+    height: 55%;
+
+    background-image: url(the%20teacher.svg);
+    background-size: 100% 100%;
+
+    top: 1vw;
+    left: 56vw;
+
+    z-index: 97;
+
+    animation-name: teacher;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes teacher {
+      0% {
+        transform: translatez() scale(.4);
+
+    }
+
+    10% {
+        transform: translatez(0) scale(.4);
+    }
+
+    70% {
+        transform: translatez() scale(.);
+    }
+}
